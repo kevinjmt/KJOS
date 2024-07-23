@@ -1,4 +1,7 @@
 /*     ---   RESETS   ---     */
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0; 
     padding: 0;
@@ -27,15 +30,10 @@ a:hover{
 .hero-block{    
     /* background: linear-gradient(90deg, #f4fcff78, #afdeff78 ,  #f4fcff78 );*/
     height: 60vh;
-    background: linear-gradient(45deg, white, #f4fcff78 , #dff2ff78, #acdcff78, #94d2ff78, #acdcff78, #dff2ff78, #f4fcff78, white);
-    background-size: 300%;
-    animation: color 15s ease-in-out infinite;
 }
-.hero-block-teasing{    
-    /* background: linear-gradient(90deg, #f4fcff78, #afdeff78 ,  #f4fcff78 );*/
-    height: 100vh;
-    background: linear-gradient(45deg, white, #f4fcff78 , #dff2ff78, #acdcff78, #94d2ff78, #acdcff78, #dff2ff78, #f4fcff78, white);
-    background-size: 300%;
+.pagebody{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), #f4fcff78 , #dff2ff78, #d4eeff78, #dff2ff78, #f4fcff78, rgba(255, 255, 255, 0));
+    background-size: 500%;
     animation: color 15s ease-in-out infinite;
 }
 @keyframes color{
@@ -55,10 +53,9 @@ a:hover{
     align-self: center;
     padding: 0 5%;
 }
-.hero-text-teasing{
-    text-align: center;
-    align-self: center;
-    padding: 25% 0;
+.learnmore-desc-div{
+    display: flex;
+    flex-direction: row;
 }
 
 h1, h2, h3, h4, p{
@@ -149,12 +146,13 @@ footer{
         padding: 0 5%;
     }
     .hero-img{
-        width: 70%;
+        width: 50%;
         align-self: center;
     }
     .hero-block{
         display: flex;
         flex-direction: column;
+        padding: 100px 25px;
     }
     .comparison-desk{
         display: none;
@@ -166,10 +164,14 @@ footer{
     }
     .download-kjos-div, .download-kjoslite-div{
         margin-top: 10px;
-        width: 300px;
-        height: 200px;
+        width: 80vw;
+        height: 100px;
     }
     .download-columns{
+        display: flex;
+        flex-direction: column;
+    }
+    .learnmore-desc-div{
         display: flex;
         flex-direction: column;
     }
@@ -182,7 +184,7 @@ footer{
         padding: 0 10%;
     }
     .hero-img{
-        width: 60%;
+        width: 25%;
         align-self: center;
     }
     .hero-block{
@@ -190,6 +192,7 @@ footer{
         justify-content: center;
         align-content: center;
         flex-direction: column;
+        padding: 100px 25px;
     }
     .comparison-desk{
         display: none;
@@ -201,7 +204,7 @@ footer{
     }
     .download-kjos-div, .download-kjoslite-div{
         width: 300px;
-        height: 200px;
+        height: 150px;
     }
     .download-columns{
         display: flex;
@@ -216,7 +219,7 @@ footer{
         padding: 0 15%;
     }
     .hero-img{
-        width: 40%;
+        width: 20%;
     }
     .hero-block{
         display: flex;
@@ -230,8 +233,8 @@ footer{
         display: none;
     }
     .download-kjos-div, .download-kjoslite-div{
-        width: 500px;
-        height: 200px;
+        width: 300px;
+        height: 150px;
     }
     .download-columns{
         display: flex;

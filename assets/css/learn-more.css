@@ -31,7 +31,7 @@ a:hover{
     /* background: linear-gradient(90deg, #f4fcff78, #afdeff78 ,  #f4fcff78 );*/
     height: 60vh;
 }
-.pagebody{
+.hero{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0), #f4fcff78 , #dff2ff78, #d4eeff78, #dff2ff78, #f4fcff78, rgba(255, 255, 255, 0));
     background-size: 500%;
     animation: color 15s ease-in-out infinite;
@@ -56,6 +56,12 @@ a:hover{
 .learnmore-desc-div{
     display: flex;
     flex-direction: row;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, p{
@@ -175,6 +181,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .text-container {
+        width: 90%;
+    }
 }
 
 
@@ -210,6 +219,9 @@ footer{
         display: flex;
         flex-direction: row;
     }
+    .text-container {
+        width: 70%;
+    }
 }
 
 
@@ -239,5 +251,8 @@ footer{
     .download-columns{
         display: flex;
         flex-direction: row;
+    }
+    .text-container {
+        width: 60%;
     }
 }

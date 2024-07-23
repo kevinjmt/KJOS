@@ -29,7 +29,6 @@ a:hover{
 
 .hero{    
     /* background: linear-gradient(90deg, #f4fcff78, #afdeff78 ,  #f4fcff78 );*/
-    height: 60vh;
     background: linear-gradient(45deg, white, #f4fcff78 , #dff2ff78, #acdcff78, #94d2ff78, #acdcff78, #dff2ff78, #f4fcff78, white);
     background-size: 300%;
     animation: color 15s ease-in-out infinite;
@@ -71,11 +70,13 @@ nav{
 }
 
 .download-but {
-    background-color: lightskyblue;
+    color: whitesmoke;
+    background-color: steelblue;
     padding: 10px;
     border-radius: 5px;
 }
 .download-but:hover {
+    color: steelblue;
     background-color: rgba(135, 206, 250, 0.5);
 }
 
@@ -165,6 +166,16 @@ nav{
     text-align: center;
     width: 3rem;
     height: 3rem;
+}
+
+.hero-img {
+    width: 30vw;
+    border-radius: 5px;
+    box-shadow: lightgrey 1px 1px 1px;
+}
+
+.hero-block {
+    padding: 5vh 0;
 }
 
 .hero-text{
@@ -317,13 +328,15 @@ footer{
     .pagebody{
         padding: 0 5%;
     }
-    .hero-img{
-        width: 70%;
-        align-self: center;
-    }
     .hero-block{
         display: flex;
         flex-direction: column;
+    }
+    .hero-img-container {
+        margin: 0 auto;
+    }
+    .hero-img {
+        width: 75vw;
     }
     .comparison-desk{
         display: none;
@@ -356,15 +369,17 @@ footer{
     .pagebody{
         padding: 0 10%;
     }
-    .hero-img{
-        width: 60%;
-        align-self: center;
-    }
     .hero-block{
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
+    }
+    .hero-img-container {
+        margin: 0 auto;
+    }
+    .hero-img {
+        width: 70vw;
     }
     .comparison-desk{
         display: none;
@@ -387,11 +402,14 @@ footer{
 
 /* PCs */
 @media (min-width: 1024px){
+    .hero-img-container {
+        margin: 0;
+    }
+    .hero-img {
+        width: 35vw;
+    }
     .pagebody{
         padding: 0 15%;
-    }
-    .hero-img{
-        width: 40%;
     }
     .hero-block{
         display: flex;

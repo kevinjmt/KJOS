@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJOS - Documentation</title>	
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/KJOS.png"/>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/learn-more.css">
+	<meta name="description" content="Your Light-Weight Debloated Windows ISO">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="../">
+                    <img class="imgtitle" src="../assets/icons/KJOS.png" >
+                </a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Bienvenue dans la documentation officielle de KJOS !</p>
+            <p>Il est important de bien suivre les étapes afin de ne pas rencontrer de problèmes lors de l'installation ou de paramétrage de l'OS.</p>
+            <p>Par conséquent, prenez bien le temps de lire toutes les indications avant de les appliquer.</p>
+            <p>La documentation est découpée en étapes. Voici le sommaire:</p>
+        </div>
+
+        <div class="text-container" style="background-color: whitesmoke; border-radius: 25px; padding: 50px;">
+            <li style="color: steelblue;">Introduction</li>
+            <li><a href="./1-telechargement-de-kjos">1) Téléchargement de KJOS</a></li>
+            <li><a href="./2-installation-de-kjos">2) Installation de KJOS</a></li>
+            <li><a href="./3-creation-du-compte-local">3) Création du compte local</a></li>
+        </div>
+
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Avant de commencer, assurez vous de bien sauvegarder vos documents et paramètres.</p>
+            <p>Il est fortement conseillé d'installer KJOS sur une VM avant de l'installer en tant que OS principal, notamment pour être sûr d'avoir bien appliqué toutes les étapes.</p>
+            <p>Si tout est bon, il est temps de commencer.</p>
+        </div>
+
+    <footer>
+        <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>
+    </footer>
+</body>
+</html>

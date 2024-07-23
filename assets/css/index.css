@@ -193,6 +193,10 @@ h1, h2, h3, h4, p, a{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+li {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
 .hero-title{
     font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1140 - 320)));
 }

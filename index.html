@@ -14,21 +14,61 @@
 </head>
 <body>
 
-    <div class="hero-block">
-        <img class="hero-img" src="./assets/imgs/KJOS-Hero.png">
-        <div class="hero-text">
-            <h1 class="hero-title">
-                KJOS
-            </h1>
-            <h2 class="subtitle">
-                A ultra debloated Windows ISO
-            </h2>
+
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="./">
+                    <img class="imgtitle" src="../assets/icons/KJOS.png" >
+                </a>
+            </div>
+            <div class="menutitles">
+                <a href="./documentation">Documentation</a>
+                <a href="#downloads" class="download-but">Télécharger</a>
+                <a href="./en/"><img src="./assets/icons/uk.png" class="flag"></a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+        <div class="hero-block">
+            <img class="hero-img" src="./assets/imgs/KJOS-Hero.png">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    KJOS
+                </h1>
+                <h2 class="subtitle">
+                    A ultra debloated Windows ISO
+                </h2>
+                <div style="margin-top: 50px;">
+                    <a href="./learn-more/"><h3>GitHub</h3></a>
+                    <a href="#downloads"><h3>Download</h3></a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="pagebody">
     
-        <h1 style="margin-top: 150px;">
+        <h1 id="downloads" style="padding-top: 150px;">
             Downloads
         </h1>
         <h1 style="padding-top: 10px; color: #ffb520;">
@@ -36,16 +76,16 @@
         </h1>
         <div style="margin-top: 150px;" class="div-download">
             <div class="download-columns">
-                <a class="download-kjos" target="_blank">
-                    <div class="download-kjos-div" style="opacity: 0.3;">
-                        <img style="height: 100px; margin-right: 10%;" src="./assets/icons/KJOS.png">
-                        <h2 class="text-download unselectable"><p>KJOS</p><p>COMING SOON</p></h2>
+                <a class="download-kjos" target="_blank" href="https://epitafr-my.sharepoint.com/:f:/g/personal/kevin_jamet_epita_fr/Ev426EeexcVLq3UgdC8ZoNUB1PPMxJ1s6IFdyChB0XKW4w?e=9pvcoe">
+                    <div class="download-kjos-div">
+                        <img style="height: 100px; margin-right: 10%;" src="./assets/icons/KJOS-Lite.png">
+                        <h2 class="text-download unselectable"><p>KJOS</p> <p>v1.0</p></h2>
                     </div>
                 </a>
                 <a class="download-kjos" target="_blank" href="https://epitafr-my.sharepoint.com/:f:/g/personal/kevin_jamet_epita_fr/Ev426EeexcVLq3UgdC8ZoNUB1PPMxJ1s6IFdyChB0XKW4w?e=9pvcoe">
                     <div class="download-kjos-div">
                         <img style="height: 100px; margin-right: 10%;" src="./assets/icons/KJOS-Lite.png">
-                        <h2 class="text-download unselectable"><p>KJOS-Lite</p> <p>(ALPHA v0.1)</p></h2>
+                        <h2 class="text-download unselectable"><p>KJOS-Lite</p> <p>v1.0</p></h2>
                     </div>
                 </a>
             </div>

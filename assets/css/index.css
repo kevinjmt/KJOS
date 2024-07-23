@@ -1,4 +1,7 @@
 /*     ---   RESETS   ---     */
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0; 
     padding: 0;
@@ -24,14 +27,14 @@ a:hover{
 
 /*    ---   GLOBALS   ---    */
 
-.hero-block{    
+.hero{    
     /* background: linear-gradient(90deg, #f4fcff78, #afdeff78 ,  #f4fcff78 );*/
     height: 60vh;
     background: linear-gradient(45deg, white, #f4fcff78 , #dff2ff78, #acdcff78, #94d2ff78, #acdcff78, #dff2ff78, #f4fcff78, white);
     background-size: 300%;
     animation: color 15s ease-in-out infinite;
 }
-.hero-block-teasing{    
+.hero-teasing{    
     /* background: linear-gradient(90deg, #f4fcff78, #afdeff78 ,  #f4fcff78 );*/
     height: 100vh;
     background: linear-gradient(45deg, white, #f4fcff78 , #dff2ff78, #acdcff78, #94d2ff78, #acdcff78, #dff2ff78, #f4fcff78, white);
@@ -50,6 +53,120 @@ a:hover{
     }
 }
 
+nav{
+    margin-bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0fr 1fr 2fr;
+    grid-template-rows: 100%;
+    border-radius: 0.5rem;
+    z-index: 1001;
+}
+.kjbrand{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.download-but {
+    background-color: lightskyblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.download-but:hover {
+    background-color: rgba(135, 206, 250, 0.5);
+}
+
+.flag{
+    width: 30px; 
+}
+
+.navigationbar{
+    align-items: row;
+}
+
+.iloveburgers{
+    display: none;
+}
+
+.menutitles{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menutitles a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.1s;
+    font-family: 'montserrat', sans-serif;
+    font-size: larger;
+    transition: all 0.5s ease;
+}
+.menutitles a:hover{
+    transition: all 0.5s ease;
+}
+
+.ham{
+    width: 50;
+    height: 50;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.bur{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ger{
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(92, 91, 91);
+    transition: 0.25s;
+}
+
+.q{
+    transform-origin: 0 0;
+}
+
+.e{
+    transform-origin: 0 100%;
+}
+
+.q.a{
+    transform: rotate(46.5deg) translate(0, -2px);
+    width: 28px;
+}
+
+.w.b{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.e.c{
+    transform: rotate(-45deg) translate(0.5px, 1.5px);
+    width: 28px;
+}
+
+.imgtitle{
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+}
+
 .hero-text{
     text-align: center;
     align-self: center;
@@ -61,7 +178,7 @@ a:hover{
     padding: 25% 0;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, a{
     color: steelblue;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -80,7 +197,6 @@ p{
 }
 a{
     transition: 0.5s;
-    color: midnightblue;
 }
 a:hover{
     text-shadow: skyblue 3px 3px 3px;
@@ -145,6 +261,59 @@ footer{
 
 /* PHONES */
 @media (max-width: 767px){
+    nav{
+        grid-template-columns: 15% 70% 15%;
+        border-radius: 0.5rem;
+    }
+    .kjbrand{
+        justify-content: center;
+        text-align: center;
+        z-index: 2000;
+    }
+    .flag{
+        margin-right: 0;
+    }
+    .imgtitle{
+        justify-content: flex-start;
+        align-content: center;
+    }
+    .iloveburgers{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        z-index: 2000;
+    }
+    .menutitles{
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 75px 0 30px 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        z-index: -100;
+        transition: 0.25s;
+        transform: translate(0, -300px); 
+        color: rgb(92, 91, 91);
+        background: white;
+    }
+    .menutitles.show{
+        transform: translate(0, 5%);
+        z-index: 999;
+    }
+    .menutitles a{
+        color: rgb(92, 91, 91);
+    }
+    .menutitles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 100%;
+        z-index: -2;
+    }
     .pagebody{
         padding: 0 5%;
     }
@@ -178,6 +347,12 @@ footer{
 
 /* TABLETS */
 @media (min-width: 768px){
+    .kjbrand{
+        margin-left: 20%;
+    }
+    .flag{
+        margin-right: 0;
+    }
     .pagebody{
         padding: 0 10%;
     }

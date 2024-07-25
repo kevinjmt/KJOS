@@ -154,6 +154,9 @@ footer{
 
 /* PHONES */
 @media (max-width: 767px){
+    .hide-on-mobile {
+        display: none;
+    }
     .pagebody{
         padding: 0 5%;
     }
@@ -198,6 +201,9 @@ footer{
 
 /* TABLETS */
 @media (min-width: 768px){
+    .hide-on-mobile {
+        display: none;
+    }
     .pagebody{
         padding: 0 10%;
     }
@@ -239,6 +245,9 @@ footer{
 
 /* PCs */
 @media (min-width: 1024px){
+    .hide-on-mobile {
+        display: flex;
+    }
     .pagebody{
         padding: 0 15%;
     }

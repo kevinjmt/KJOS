@@ -177,6 +177,7 @@ table{
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
+    margin: 25px 0;
 }
 
 .copy-button {
@@ -190,6 +191,7 @@ table{
 
 .command {
     width: 100%;
+    outline: none;
 }
 
 .command, .copy-text, .copy-button {

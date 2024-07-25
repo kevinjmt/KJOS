@@ -99,6 +99,10 @@ a:hover{
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1500 - 320)));
     color: steelblue;
 }
+.star-download{
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1500 - 320)));
+    color: goldenrod;
+}
 .download-kjos, .download-kjoslite{
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -123,6 +127,32 @@ a:hover{
     border: 8px solid steelblue; 
     border-radius: 25px;
 }
+
+.download-star, .download-starlite{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 10px;
+}
+.download-star-div, .download-starlite-div{
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: gold;
+    border: 8px solid gold; 
+    border-radius: 25px;
+}
+.download-star-div:hover, .download-starlite-div:hover{
+    box-shadow: gold 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: goldenrod;
+    border: 8px solid goldenrod; 
+    border-radius: 25px;
+}
+
 table{
     width: 100%;
 }
@@ -177,7 +207,7 @@ footer{
         padding: 0 5%;
         display: flex;
     }
-    .download-kjos-div, .download-kjoslite-div{
+    .download-kjos-div, .download-kjoslite-div, .download-star-div{
         margin-top: 10px;
         width: 80vw;
         height: 100px;
@@ -226,7 +256,7 @@ footer{
         padding: 0 5%;
         display: flex;
     }
-    .download-kjos-div, .download-kjoslite-div{
+    .download-kjos-div, .download-kjoslite-div, .download-star-div{
         width: 300px;
         height: 150px;
     }
@@ -265,7 +295,7 @@ footer{
     .comparison-phone{
         display: none;
     }
-    .download-kjos-div, .download-kjoslite-div{
+    .download-kjos-div, .download-kjoslite-div, .download-star-div{
         width: 300px;
         height: 150px;
     }

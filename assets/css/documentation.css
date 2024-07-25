@@ -128,7 +128,7 @@ a:hover{
     border-radius: 25px;
 }
 
-.download-star, .download-starlite{
+.download-star, .download-starlite, .download-kjoslight, .download-kjosdark{
     display: flex;
     font-family: 'Montserrat', sans-serif;
     margin: 0 10px;
@@ -150,6 +150,44 @@ a:hover{
     display: flex;
     color: goldenrod;
     border: 8px solid goldenrod; 
+    border-radius: 25px;
+}
+.download-kjoslight-div {
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: lightgray;
+    border: 8px solid lightgray; 
+    border-radius: 25px;
+}
+.download-kjoslight-div:hover{
+    box-shadow: lightgray 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: gray;
+    border: 8px solid gray; 
+    border-radius: 25px;
+}
+.download-kjosdark-div {
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: gray;
+    border: 8px solid gray; 
+    border-radius: 25px;
+}
+.download-kjosdark-div:hover{
+    box-shadow: gray 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    border: 8px solid black; 
     border-radius: 25px;
 }
 
@@ -236,7 +274,7 @@ footer{
         padding: 0 5%;
         display: flex;
     }
-    .download-kjos-div, .download-kjoslite-div, .download-star-div{
+    .download-kjos-div, .download-kjoslite-div, .download-star-div, .download-kjoslight-div, .download-kjosdark-div {
         margin-top: 10px;
         width: 80vw;
         height: 100px;
@@ -285,7 +323,7 @@ footer{
         padding: 0 5%;
         display: flex;
     }
-    .download-kjos-div, .download-kjoslite-div, .download-star-div{
+    .download-kjos-div, .download-kjoslite-div, .download-star-div, .download-kjoslight-div, .download-kjosdark-div {
         width: 300px;
         height: 150px;
     }
@@ -324,7 +362,7 @@ footer{
     .comparison-phone{
         display: none;
     }
-    .download-kjos-div, .download-kjoslite-div, .download-star-div{
+    .download-kjos-div, .download-kjoslite-div, .download-star-div, .download-kjoslight-div, .download-kjosdark-div {
         width: 300px;
         height: 150px;
     }

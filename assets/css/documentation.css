@@ -137,6 +137,12 @@ table{
     margin-top: 3%;
 }
 
+.note {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
 footer{
     background-color: whitesmoke;
     height: 200px;
@@ -184,6 +190,9 @@ footer{
     .text-container {
         width: 90%;
     }
+    img-illu {
+        width: 90%;
+    }
 }
 
 
@@ -222,6 +231,9 @@ footer{
     .text-container {
         width: 70%;
     }
+    img-illu {
+        width: 60%;
+    }
 }
 
 
@@ -254,5 +266,8 @@ footer{
     }
     .text-container {
         width: 60%;
+    }
+    img-illu {
+        width: 30%;
     }
 }

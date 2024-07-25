@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJOS - Documentation</title>	
+    <link rel="shortcut icon" type="image/png" href="../../assets/icons/KJOS.png"/>
+    <link rel="stylesheet" href="../../assets/css/index.css">
+    <link rel="stylesheet" href="../../assets/css/learn-more.css">
+    <link rel="stylesheet" href="../../assets/css/documentation.css">
+	<meta name="description" content="Your Light-Weight Debloated Windows ISO">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="../../">
+                    <img class="imgtitle" src="../../assets/icons/KJOS.png" >
+                </a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
+
+        <div class="text-container" style="background-color: whitesmoke; border-radius: 25px; padding: 50px; margin-top: 50px;">
+            <li style="color: steelblue;">Introduction</li>
+            <li><a href="../1-telechargement-de-kjos">1) Téléchargement de KJOS</a></li>
+            <li><a href="../2-installation-de-kjos">2) Installation de KJOS</a></li>
+            <li><a href="../3-creation-du-compte-local">3) Création du compte local</a></li>
+        </div>
+
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Téléchargez l'OS que vous souhaitez installer !</p>
+        </div>
+
+        <div class="div-download">
+            <div class="download-columns">
+                <a class="download-kjos" target="_blank" href="https://mega.nz/file/ErtAiaZR#mfcFos8o1CK5vZ8ZluIBBbAhGynoGDhio3bOpYD5FrU">
+                    <div class="download-kjos-div">
+                        <img style="height: 100px; margin-right: 10%;" src="../../assets/icons/KJOS.png">
+                        <h2 class="text-download unselectable"><p>KJOS</p> <p>v1.0</p></h2>
+                    </div>
+                </a>
+                <a class="download-kjos" target="_blank" href="https://mega.nz/file/UmElDKJD#3LfGZ5KTCqYucuQoggjPt66EDKd4AtB5KC0zsQnDdjo">
+                    <div class="download-kjos-div">
+                        <img style="height: 100px; margin-right: 10%;" src="../../assets/icons/KJOS-Lite.png">
+                        <h2 class="text-download unselectable"><p>KJOS-Lite</p> <p>v1.0</p></h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Puis passez à l'étape suivante.</p>
+            <div class="note">
+                <p>📌 <a href="../vm">Installer KJOS sur une VM</a></p>
+            </div>
+        </div>
+
+        <div style="margin-top: 100px;" class="div-download">
+            <div class="download-columns">
+                <a class="download-kjos" href="../">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Retour</p> <p>◀️ Documentation</p></h2>
+                    </div>
+                </a>
+                <a class="download-kjos" href="../1-telechargement-de-kjos">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Suivant</p> <p>Téléchargement de KJOS ▶️</p></h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <footer>
+        <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>
+    </footer>
+</body>
+</html>

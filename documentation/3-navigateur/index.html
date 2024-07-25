@@ -73,14 +73,61 @@
         
         <div class="text-container" style="padding: 100px 0;">
             <p>Pour commencer, ouvrir Microsoft Edge. et refuser toutes les options comme sur ces captures d'écran.</p>
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator01.png" alt="navigator01">
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator02.png" alt="navigator02">
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator03.png" alt="navigator03">
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator04.png" alt="navigator04">
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator05.png" alt="navigator05">
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator06.png" alt="navigator06">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Une fois toutes ces autorisations passées, aller sur la page de documentation actuelle de KJOS pour continuer sur PC: </p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="continue_on_pc" value="https://kevinjmt.github.io/KJOS/documentation/3-navigateur#continue_on_pc">
+                <button class="copy-button" onclick="copy_doc_link_to_clipboard()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator07.png" alt="navigator07">
+        </div>
+
+        <div id="continue_on_pc" class="text-container" style="padding: 100px 0;">
             <p>Ouvrir Powershell et copier la commande:</p>
             <div class="copy-text">
                 <input readonly class="command" type="text" id="install_firefox_command" value="Invoke-WebRequest -OutFile 'Firefox Installer.exe' -Uri 'https://download.mozilla.org/?product=firefox-stub'; Start-Process 'Firefox Installer.exe' -Wait; rm 'Firefox Installer.exe'">
-                <button class="copy-button" onclick="copy_to_clipboard()">
+                <button class="copy-button" onclick="copy_firefox_command_to_clipboard()">
                     <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
                 </button>
             </div>
             <img style="border-radius: 10px;" src="../../assets/imgs/navigator1.png" alt="navigator1">
+            <p>Cette commande installera Firefox, et le lancera à la fin de l'installation. Vous pouvez fermer la fenêtre Firefox.</p>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Maintenant que Firefox est installé, il est temps de désinstaller Microsoft Edge ainsi que toutes ses données et dépendances.</p>
+            <p>Pour cela, on va de nouveau utiliser le Powershell, et utiliser un outil open-source <a target="_blank" href="https://github.com/he3als/EdgeRemover">EdgeRemover</a>.</p>
+            <p>Exécuter les commandes suivantes:</p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="uninstall_edge_command1" value="iex &quot;&{$(irm https://cdn.jsdelivr.net/gh/he3als/EdgeRemover@main/get.ps1)} -UninstallEdge -RemoveEdgeData&quot;">
+                <button class="copy-button" onclick="copy_edge_command_to_clipboard1()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator08.png" alt="navigator8">
+            <p>Cette première commande permet de désinstaller Microsoft Edge et toutes ses données ainsi que ses dépendances.</p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="uninstall_edge_command2" value="iex &quot;&{$(irm https://cdn.jsdelivr.net/gh/he3als/EdgeRemover@main/get.ps1)} -ClearUpdateBlocks&quot;">
+                <button class="copy-button" onclick="copy_edge_command_to_clipboard2()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
+            <img style="border-radius: 10px;" src="../../assets/imgs/navigator09.png" alt="navigator9">
+            <p>Cette deuxième commande permet de désactiver les mises à jour automatique ainsi que la réinstallation de Microsoft Edge après une mise à jour Windows.</p>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>C'est fini pour le navigateur, il faut maintenant activer Windows.</p>
         </div>
 
         <div style="margin-top: 100px;" class="div-download">
@@ -99,8 +146,26 @@
         </div>
     
         <script>
-            function copy_to_clipboard() {
+            function copy_firefox_command_to_clipboard() {
                 var text = document.getElementById("install_firefox_command");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+            function copy_doc_link_to_clipboard() {
+                var text = document.getElementById("continue_on_pc");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+            function copy_edge_command_to_clipboard1() {
+                var text = document.getElementById("uninstall_edge_command1");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+            function copy_edge_command_to_clipboard2() {
+                var text = document.getElementById("uninstall_edge_command2");
                 text.select();
                 text.setSelectionRange(0,99999); // mobile
                 navigator.clipboard.writeText(text.value);

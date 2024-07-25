@@ -173,6 +173,33 @@ table{
     margin: 25px 0;
 }
 
+.copy-text {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+.copy-button {
+    width: 45px;
+    height: 45px;
+}
+
+.copy-button:hover {
+    cursor: pointer;
+}
+
+.command {
+    width: 100%;
+}
+
+.command, .copy-text, .copy-button {
+    font-size: 20px;
+    padding: 10px;
+    color: darkgray;
+    border: none;
+    border-radius: 5px;
+}
+
 footer{
     background-color: whitesmoke;
     height: 200px;

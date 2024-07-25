@@ -57,6 +57,28 @@
         </div>
 
         <div class="text-container" style="padding: 100px 0;">
+            <p>Il faut maintenant faire le choix de votre navigateur.</p>
+            <p>Par défaut, Microsoft Edge est installé.</p>
+            <div class="note" style="background-color: khaki;">
+                <p>⚠️ Microsoft Edge est un bon navigateur, il est très rapide et consomme peu de mémoire RAM et de ressources.</p>
+                <p>Il est basé sur Chromium, ce qui lui permet d'être compatible avec les extensions chrome. Je le recommande pour ceux qui souhaitent utiliser Google Chrome car il est plus rapide et plus léger.</p>
+                <p>En revanche, ce navigateur est réputé pour se lancer en arrière-plan, collecter et envoyer des données à Microsoft. (Tout comme Google fait avec Google Chrome par ailleurs)</p>
+                <p>Si vous souhaitez l'utiliser comme votre navigateur principal ou que vous souhaitez le garder, vous pouvez passer à l'étape suivante : <a href="../4-activation">Activation</a></p>
+            </div>
+            <p>Personnellement, je conseille d'installer Firefox, il est mondialement connu et est open-source.</p>
+            <p>De plus, il propose également des extensions, un compte pour synchroniser les recherches sur tous vos appareils et est disponible sur Android, IOS, MacOS.</p>
+            <p>Ici, je vais montrer comment installer Firefox en utilisant l'invite de commande (ce qui nous permettra par la suite d'enlever Microsoft Edge).</p>
+            <p>Enfin, si vous souhaitez utiliser un autre navigateur, installez celui de votre choix !</p>
+        </div>
+        
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Pour commencer, ouvrir Powershell en mode administrateur et copier la commande:</p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="install_firefox_command" value="Invoke-WebRequest -OutFile 'Firefox Installer.exe' -Uri 'https://download.mozilla.org/?product=firefox-stub'; Start-Process 'Firefox Installer.exe' -Wait; rm 'Firefox Installer.exe'">
+                <button class="copy-button" onclick="copy_to_clipboard()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
         </div>
 
         <div style="margin-top: 100px;" class="div-download">
@@ -73,6 +95,15 @@
                 </a>
             </div>
         </div>
+    
+        <script>
+            function copy_to_clipboard() {
+                var text = document.getElementById("install_firefox_command");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+        </script>
 
     <footer>
         <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>

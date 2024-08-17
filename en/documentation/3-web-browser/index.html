@@ -63,22 +63,22 @@
         </div>
 
         <div class="text-container" style="padding: 100px 0;">
-            <p>Il faut maintenant faire le choix de votre navigateur.</p>
-            <p>Par défaut, Microsoft Edge est installé.</p>
+            <p>Now you need to choose your browser.</p>
+            <p>By default, Microsoft Edge is installed.</p>
             <div class="note" style="background-color: khaki;">
-                <p>⚠️ Microsoft Edge est un bon navigateur, il est très rapide et consomme peu de mémoire RAM et de ressources.</p>
-                <p>Il est basé sur Chromium, ce qui lui permet d'être compatible avec les extensions chrome. Je le recommande pour ceux qui souhaitent utiliser Google Chrome car il est plus rapide et plus léger.</p>
-                <p>En revanche, ce navigateur est réputé pour se lancer en arrière-plan, collecter et envoyer des données à Microsoft. (Tout comme Google fait avec Google Chrome par ailleurs)</p>
-                <p>Si vous souhaitez l'utiliser comme votre navigateur principal ou que vous souhaitez le garder, vous pouvez passer à l'étape suivante : <a href="../4-activation">Activation</a></p>
+                <p>⚠️ Microsoft Edge is a good browser, it's very fast and consumes very little RAM and resources.</p>
+                <p>It's based on Chromium, which means it's compatible with Chrome extensions. I recommend it for those who want to use Google Chrome, as it's faster and lighter.</p>
+                <p>On the other hand, this browser is known to run in the background, collecting and sending data to Microsoft. (Just as Google does with Google Chrome, by the way).</p>
+                <p>If you want to use it as your main browser or keep it, you can skip to the next step: <a href="../4-activation">Activation</a></p>
             </div>
-            <p>Personnellement, je conseille d'installer Firefox, il est mondialement connu et est open-source.</p>
-            <p>De plus, il propose également des extensions, un compte pour synchroniser les recherches sur tous vos appareils et est disponible sur Android, IOS, MacOS.</p>
-            <p>Ici, je vais montrer comment installer Firefox en utilisant l'invite de commande (ce qui nous permettra par la suite d'enlever Microsoft Edge).</p>
-            <p>Enfin, si vous souhaitez utiliser un autre navigateur, installez celui de votre choix !</p>
+            <p>Personally, I recommend installing Firefox, it's world-renowned and open-source.</p>
+            <p>Furthermore, it also offers extensions, an account to synchronize searches on all your devices and is available on Android, IOS, MacOS.</p>
+            <p>Here, I'll show how to install Firefox using the command prompt (which will later allow us to remove Microsoft Edge).</p>
+            <p>Finally, if you'd like to use another browser, install the one of your choice!</p>
         </div>
         
         <div class="text-container" style="padding: 100px 0;">
-            <p>Pour commencer, ouvrir Microsoft Edge. et refuser toutes les options comme sur ces captures d'écran.</p>
+            <p>To get started, open Microsoft Edge. and decline all options as in these screenshots.</p>
             <img style="border-radius: 10px;" src="../../../assets/imgs/navigator01.png" alt="navigator01">
             <img style="border-radius: 10px;" src="../../../assets/imgs/navigator02.png" alt="navigator02">
             <img style="border-radius: 10px;" src="../../../assets/imgs/navigator03.png" alt="navigator03">
@@ -88,7 +88,7 @@
         </div>
 
         <div class="text-container" style="padding: 100px 0;">
-            <p>Une fois toutes ces autorisations passées, aller sur la page de documentation actuelle de KJOS pour continuer sur PC: </p>
+            <p>Once all these authorizations have been passed, go to the current KJOS documentation page to continue on PC: </p>
             <div class="copy-text">
                 <input readonly class="command" type="text" id="continue_on_pc" value="https://kevinjmt.github.io/KJOS/documentation/3-navigateur#continue_on_pc">
                 <button class="copy-button" onclick="copy_doc_link_to_clipboard()">
@@ -99,7 +99,7 @@
         </div>
 
         <div id="continue_on_pc" class="text-container" style="padding: 100px 0;">
-            <p>Ouvrir Powershell et copier la commande:</p>
+            <p>Open Powershell and copy the command:</p>
             <div class="copy-text">
                 <input readonly class="command" type="text" id="install_firefox_command" value="Invoke-WebRequest -OutFile 'Firefox Installer.exe' -Uri 'https://download.mozilla.org/?product=firefox-stub'; Start-Process 'Firefox Installer.exe' -Wait; rm 'Firefox Installer.exe'">
                 <button class="copy-button" onclick="copy_firefox_command_to_clipboard()">
@@ -107,13 +107,13 @@
                 </button>
             </div>
             <img style="border-radius: 10px;" src="../../../assets/imgs/navigator1.png" alt="navigator1">
-            <p>Cette commande installera Firefox, et le lancera à la fin de l'installation. Vous pouvez fermer la fenêtre Firefox.</p>
+            <p>This command will install Firefox, and launch it at the end of the installation. You can close the Firefox window.</p>
         </div>
 
         <div class="text-container" style="padding: 100px 0;">
-            <p>Maintenant que Firefox est installé, il est temps de désinstaller Microsoft Edge ainsi que toutes ses données et dépendances.</p>
-            <p>Pour cela, on va de nouveau utiliser le Powershell, et utiliser un outil open-source <a target="_blank" href="https://github.com/he3als/EdgeRemover">EdgeRemover</a>.</p>
-            <p>Exécuter les commandes suivantes:</p>
+            <p>Now that Firefox is installed, it's time to uninstall Microsoft Edge and all its data and dependencies..</p>
+            <p>To do this, we're going to use Powershell again, and use an open-source tool <a target="_blank" href="https://github.com/he3als/EdgeRemover">EdgeRemover</a>.</p>
+            <p>Run the following commands:</p>
             <div class="copy-text">
                 <input readonly class="command" type="text" id="uninstall_edge_command1" value="iex &quot;&{$(irm https://cdn.jsdelivr.net/gh/he3als/EdgeRemover@main/get.ps1)} -UninstallEdge -RemoveEdgeData&quot;">
                 <button class="copy-button" onclick="copy_edge_command_to_clipboard1()">
@@ -121,7 +121,7 @@
                 </button>
             </div>
             <img style="border-radius: 10px;" src="../../../assets/imgs/navigator08.png" alt="navigator8">
-            <p>Cette première commande permet de désinstaller Microsoft Edge et toutes ses données ainsi que ses dépendances.</p>
+            <p>This first command uninstalls Microsoft Edge and all its data and dependencies.</p>
             <div class="copy-text">
                 <input readonly class="command" type="text" id="uninstall_edge_command2" value="iex &quot;&{$(irm https://cdn.jsdelivr.net/gh/he3als/EdgeRemover@main/get.ps1)} -ClearUpdateBlocks&quot;">
                 <button class="copy-button" onclick="copy_edge_command_to_clipboard2()">
@@ -129,23 +129,23 @@
                 </button>
             </div>
             <img style="border-radius: 10px;" src="../../../assets/imgs/navigator09.png" alt="navigator9">
-            <p>Cette deuxième commande permet de désactiver les mises à jour automatique ainsi que la réinstallation de Microsoft Edge après une mise à jour Windows.</p>
+            <p>This second command disables automatic updates as well as Microsoft Edge reinstallation after a Windows update.</p>
         </div>
 
         <div class="text-container" style="padding: 100px 0;">
-            <p>C'est fini pour le navigateur, il faut maintenant activer Windows.</p>
+            <p>That's it for the browser, you now need to activate Windows.</p>
         </div>
 
         <div style="margin-top: 100px;" class="div-download">
             <div class="download-columns">
-                <a class="download-kjos" href="../2-creation-du-compte-local">
+                <a class="download-kjos" href="../2-local-account-creation">
                     <div class="download-kjos-div">
-                        <h2 class="text-download unselectable"><p>Retour</p> <p>◀️ Création du compte local</p></h2>
+                        <h2 class="text-download unselectable"><p>Back</p> <p>◀️ Local Account Creation</p></h2>
                     </div>
                 </a>
                 <a class="download-kjos" href="../4-activation">
                     <div class="download-kjos-div">
-                        <h2 class="text-download unselectable"><p>Suivant</p> <p>Activation ▶️</p></h2>
+                        <h2 class="text-download unselectable"><p>Next</p> <p>Activation ▶️</p></h2>
                     </div>
                 </a>
             </div>

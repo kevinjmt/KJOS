@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJOS - Documentation</title>	
+    <link rel="shortcut icon" type="image/png" href="../../../assets/icons/kjos-icon.png"/>
+    <link rel="stylesheet" href="../../../assets/css/index.css">
+    <link rel="stylesheet" href="../../../assets/css/learn-more.css">
+    <link rel="stylesheet" href="../../../assets/css/documentation.css">
+	<meta name="description" content="Your Light-Weight Debloated Windows ISO">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+	<meta property="og:title" content="KJOS" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kevinjmt.github.io/KJOS" />
+	<meta property="og:description" content="A ultra debloated Windows ISO" />
+	<meta property="og:image" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />	
+	<meta property="og:image:secure_url" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="../../../">
+                    <img class="imgtitle" src="../../../assets/icons/kjos-icon.png" >
+                </a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
+
+        <div class="text-container" style="background-color: whitesmoke; border-radius: 25px; padding: 50px; margin-top: 50px;">
+            <li><a href="../introduction">Introduction</a></li>
+            <li style="color: #4682b4;">1) Téléchargement de KJOS</li>
+            <li><a href="../2-creation-du-compte-local">2) Création du compte local</a></li>
+            <li><a href="../3-navigateur">3) Navigateur</a></li>
+            <li><a href="../4-activation">4) Activation</a></li>
+            <li><a href="../5-logiciels">5) Logiciels</a></li>
+            <li><a href="../6-themes">6) Thèmes</a></li>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Une fois KJOS téléchargé, installer <a target="_blank" href="https://rufus.ie/fr/">Rufus</a> afin de créer une clé bootable.</p>
+            <p>Choisir l'ISO téléchargé et la clé USB où vous souhaitez l'installer. Enfin, cliquer sur DÉMARRER (voir ci-dessous).</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/rufus.png" alt="Rufus">
+            <p>Cette clé servira à installer KJOS sur votre SSD.</p>
+        </div>
+
+        <div class="text-container hide-on-mobile" style="padding: 100px 0;">
+            <div class="note" style="background-color: #ebf5fb; display: flex; flex-direction: row;">
+                <img style="border-radius: 10px; width: 20vw;" src="../../../assets/imgs/qr-code1.png" alt="guide-link">
+                <p style="margin: auto 0; padding: 0 25px;">À partir de ce stade, il est fortement conseillé de garder ce guide ouvert sur votre téléphone pour suivre les étapes.</p>
+            </div>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Une fois la clé bootable créée, redémarrer l'ordinateur et au moment du démarrage, presser de nombreuses fois la touche 'Suppr' pour rentrer dans le BIOS.</p>
+            <p>Le BIOS nous permet de choisir entre autre où nous souhaitons démarrer l'ordinateur, dans notre cas, sur la clé contenant KJOS.</p>
+            <p>Pour ce faire il faut trouver le 'Menu Boot' (ou 'Boot Menu' en anglais), les marques de carte mères étant très différentes, il faudra vous renseigner où ce menu se situe dans le BIOS.</p>
+            <p>Dans ce menu, choisir la clé USB précédemment choisie dans Rufus et confirmer. Il faudra ensuite quitter le BIOS en sauvegardant, l'ordinateur redémarrera sur la clé pour afficher le menu suivant.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_6bis.png" alt="new vm 6bis">
+            <p>Il suffit de cliquer sur suivant, puis choisir le Disque où installer KJOS.</p>
+            <div class="note" style="background-color: lightcoral;">
+                <p style="color: darkred;">📌 Si vous avez des documents ou éléments sur ce disque que vous souhaitez garder, ils seront écrasés et l'action est irréversible ! Prenez soin de sauvegarder vos documents avant !</p>
+                <p style="color: darkred;">📌 Je ne serai pas responsable de la perte de vos données.</p>
+            </div>
+            <p>Cliquer sur suivant et laisser KJOS s'installer sur le disque.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_7bis.png" alt="new vm 7bis">
+            <p>L'ordinateur va redémarrer de nombreuses fois et peu rester figé pendant quelques secondes, pas d'inquiétude, tout est normal.</p>
+            <p>Une fois l'installation finie, une page de création de compte local s'affichera.</p>
+        </div>
+
+        <div style="margin-top: 100px;" class="div-download">
+            <div class="download-columns">
+                <a class="download-kjos" href="../introduction">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Retour</p> <p>◀️ Introduction</p></h2>
+                    </div>
+                </a>
+                <a class="download-kjos" href="../2-creation-du-compte-local">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Suivant</p> <p>Création du compte local ▶️</p></h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <footer>
+        <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>
+    </footer>
+</body>
+</html>

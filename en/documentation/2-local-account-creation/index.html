@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJOS - Documentation</title>	
+    <link rel="shortcut icon" type="image/png" href="../../../assets/icons/kjos-icon.png"/>
+    <link rel="stylesheet" href="../../../assets/css/index.css">
+    <link rel="stylesheet" href="../../../assets/css/learn-more.css">
+    <link rel="stylesheet" href="../../../assets/css/documentation.css">
+	<meta name="description" content="Your Light-Weight Debloated Windows ISO">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+	<meta property="og:title" content="KJOS" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kevinjmt.github.io/KJOS" />
+	<meta property="og:description" content="A ultra debloated Windows ISO" />
+	<meta property="og:image" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />	
+	<meta property="og:image:secure_url" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="../../../">
+                    <img class="imgtitle" src="../../../assets/icons/kjos-icon.png" >
+                </a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
+
+        <div class="text-container" style="background-color: whitesmoke; border-radius: 25px; padding: 50px; margin-top: 50px;">
+            <li><a href="../introduction">Introduction</a></li>
+            <li><a href="../1-telechargement-de-kjos">1) Téléchargement de KJOS</a></li>
+            <li style="color: steelblue;">2) Création du compte local</li>
+            <li><a href="../3-navigateur">3) Navigateur</a></li>
+            <li><a href="../4-activation">4) Activation</a></li>
+            <li><a href="../5-logiciels">5) Logiciels</a></li>
+            <li><a href="../6-themes">6) Thèmes</a></li>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Pour créer le compte local, il suffit de mettre un nom de compte, puis un mot de passe.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/installation1.png" alt="installation1">
+            <img style="border-radius: 10px;" src="../../../assets/imgs/installation2.png" alt="installation2">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>3 questions de sécurité vous seront ensuite posées, elles servent à déverrouiller votre session Windows si jamais vous oubliez votre mot de passe.</p>
+            <div class="note">
+                <p>📌 Il est donc fortement conseillé de les noter quelque part.</p>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/installation3.png" alt="installation3">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <div class="note">
+                <p>📌 L'ordinateur peut effectuer des mises à jour si de nouvelles sont disponibles et va redémarrer à plusieurs reprises.</p>
+            </div>
+            <p>Une fois les mises à jour effectuées, l'ordinateur peut vous demander votre code et terminera l'installation comme ci-dessous.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/installation4.png" alt="installation4">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>L'écran d'accueil de Windows s'affichera lorsque KJOS sera installé sur votre ordinateur.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/installation5.png" alt="installation5">
+            <div class="note">
+                <p>📌 Si vous avez toujours votre clé bootable de branchée, vous pouvez la retirer.</p>
+                <p>📌 Si vous êtes sur une VM, vous pouvez retirer l'ISO des disques connectés de <a href="../vm#iso">la même façon que lorsque vous l'avez ajouté</a>.</p>
+            </div>
+            <p>À ce stade, KJOS est utilisable et vous pouvez commencer à l'utiliser.</p>
+            <p>Vous pouvez par ailleurs changer la langue de Windows dans:</p>
+            <div class="note">
+                <p>Heure & Langue -> Langue & Région -> Ajouter une langue</p>
+                <p>Langue affichée dans Windows -> [La langue que vous avez téléchargée]</p>
+            </div>
+            <p>En revanche, il reste quelques étapes pour terminer complètement l'installation de votre environnement Windows.</p>
+        </div>
+
+        <div style="margin-top: 100px;" class="div-download">
+            <div class="download-columns">
+                <a class="download-kjos" href="../1-telechargement-de-kjos">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Retour</p> <p>◀️ Téléchargement de KJOS</p></h2>
+                    </div>
+                </a>
+                <a class="download-kjos" href="../3-navigateur">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Suivant</p> <p>Navigateur ▶️</p></h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <footer>
+        <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>
+    </footer>
+</body>
+</html>

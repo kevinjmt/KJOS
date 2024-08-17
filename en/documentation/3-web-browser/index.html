@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJOS - Documentation</title>	
+    <link rel="shortcut icon" type="image/png" href="../../../assets/icons/kjos-icon.png"/>
+    <link rel="stylesheet" href="../../../assets/css/index.css">
+    <link rel="stylesheet" href="../../../assets/css/learn-more.css">
+    <link rel="stylesheet" href="../../../assets/css/documentation.css">
+	<meta name="description" content="Your Light-Weight Debloated Windows ISO">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+	<meta property="og:title" content="KJOS" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kevinjmt.github.io/KJOS" />
+	<meta property="og:description" content="A ultra debloated Windows ISO" />
+	<meta property="og:image" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />	
+	<meta property="og:image:secure_url" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="../../../">
+                    <img class="imgtitle" src="../../../assets/icons/kjos-icon.png" >
+                </a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
+
+        <div class="text-container" style="background-color: whitesmoke; border-radius: 25px; padding: 50px; margin-top: 50px;">
+            <li><a href="../introduction">Introduction</a></li>
+            <li><a href="../1-telechargement-de-kjos">1) Téléchargement de KJOS</a></li>
+            <li><a href="../2-creation-du-compte-local">2) Création du compte local</a></li>
+            <li style="color: steelblue;">3) Navigateur</li>
+            <li><a href="../4-activation">4) Activation</a></li>
+            <li><a href="../5-logiciels">5) Logiciels</a></li>
+            <li><a href="../6-themes">6) Thèmes</a></li>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Il faut maintenant faire le choix de votre navigateur.</p>
+            <p>Par défaut, Microsoft Edge est installé.</p>
+            <div class="note" style="background-color: khaki;">
+                <p>⚠️ Microsoft Edge est un bon navigateur, il est très rapide et consomme peu de mémoire RAM et de ressources.</p>
+                <p>Il est basé sur Chromium, ce qui lui permet d'être compatible avec les extensions chrome. Je le recommande pour ceux qui souhaitent utiliser Google Chrome car il est plus rapide et plus léger.</p>
+                <p>En revanche, ce navigateur est réputé pour se lancer en arrière-plan, collecter et envoyer des données à Microsoft. (Tout comme Google fait avec Google Chrome par ailleurs)</p>
+                <p>Si vous souhaitez l'utiliser comme votre navigateur principal ou que vous souhaitez le garder, vous pouvez passer à l'étape suivante : <a href="../4-activation">Activation</a></p>
+            </div>
+            <p>Personnellement, je conseille d'installer Firefox, il est mondialement connu et est open-source.</p>
+            <p>De plus, il propose également des extensions, un compte pour synchroniser les recherches sur tous vos appareils et est disponible sur Android, IOS, MacOS.</p>
+            <p>Ici, je vais montrer comment installer Firefox en utilisant l'invite de commande (ce qui nous permettra par la suite d'enlever Microsoft Edge).</p>
+            <p>Enfin, si vous souhaitez utiliser un autre navigateur, installez celui de votre choix !</p>
+        </div>
+        
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Pour commencer, ouvrir Microsoft Edge. et refuser toutes les options comme sur ces captures d'écran.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator01.png" alt="navigator01">
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator02.png" alt="navigator02">
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator03.png" alt="navigator03">
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator04.png" alt="navigator04">
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator05.png" alt="navigator05">
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator06.png" alt="navigator06">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Une fois toutes ces autorisations passées, aller sur la page de documentation actuelle de KJOS pour continuer sur PC: </p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="continue_on_pc" value="https://kevinjmt.github.io/KJOS/documentation/3-navigateur#continue_on_pc">
+                <button class="copy-button" onclick="copy_doc_link_to_clipboard()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator07.png" alt="navigator07">
+        </div>
+
+        <div id="continue_on_pc" class="text-container" style="padding: 100px 0;">
+            <p>Ouvrir Powershell et copier la commande:</p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="install_firefox_command" value="Invoke-WebRequest -OutFile 'Firefox Installer.exe' -Uri 'https://download.mozilla.org/?product=firefox-stub'; Start-Process 'Firefox Installer.exe' -Wait; rm 'Firefox Installer.exe'">
+                <button class="copy-button" onclick="copy_firefox_command_to_clipboard()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator1.png" alt="navigator1">
+            <p>Cette commande installera Firefox, et le lancera à la fin de l'installation. Vous pouvez fermer la fenêtre Firefox.</p>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Maintenant que Firefox est installé, il est temps de désinstaller Microsoft Edge ainsi que toutes ses données et dépendances.</p>
+            <p>Pour cela, on va de nouveau utiliser le Powershell, et utiliser un outil open-source <a target="_blank" href="https://github.com/he3als/EdgeRemover">EdgeRemover</a>.</p>
+            <p>Exécuter les commandes suivantes:</p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="uninstall_edge_command1" value="iex &quot;&{$(irm https://cdn.jsdelivr.net/gh/he3als/EdgeRemover@main/get.ps1)} -UninstallEdge -RemoveEdgeData&quot;">
+                <button class="copy-button" onclick="copy_edge_command_to_clipboard1()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator08.png" alt="navigator8">
+            <p>Cette première commande permet de désinstaller Microsoft Edge et toutes ses données ainsi que ses dépendances.</p>
+            <div class="copy-text">
+                <input readonly class="command" type="text" id="uninstall_edge_command2" value="iex &quot;&{$(irm https://cdn.jsdelivr.net/gh/he3als/EdgeRemover@main/get.ps1)} -ClearUpdateBlocks&quot;">
+                <button class="copy-button" onclick="copy_edge_command_to_clipboard2()">
+                    <svg style="fill: darkgray;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/></svg>
+                </button>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/navigator09.png" alt="navigator9">
+            <p>Cette deuxième commande permet de désactiver les mises à jour automatique ainsi que la réinstallation de Microsoft Edge après une mise à jour Windows.</p>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>C'est fini pour le navigateur, il faut maintenant activer Windows.</p>
+        </div>
+
+        <div style="margin-top: 100px;" class="div-download">
+            <div class="download-columns">
+                <a class="download-kjos" href="../2-creation-du-compte-local">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Retour</p> <p>◀️ Création du compte local</p></h2>
+                    </div>
+                </a>
+                <a class="download-kjos" href="../4-activation">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Suivant</p> <p>Activation ▶️</p></h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <script>
+            function copy_firefox_command_to_clipboard() {
+                var text = document.getElementById("install_firefox_command");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+            function copy_doc_link_to_clipboard() {
+                var text = document.getElementById("continue_on_pc");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+            function copy_edge_command_to_clipboard1() {
+                var text = document.getElementById("uninstall_edge_command1");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+            function copy_edge_command_to_clipboard2() {
+                var text = document.getElementById("uninstall_edge_command2");
+                text.select();
+                text.setSelectionRange(0,99999); // mobile
+                navigator.clipboard.writeText(text.value);
+            }
+        </script>
+
+    <footer>
+        <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJOS - Documentation</title>	
+    <link rel="shortcut icon" type="image/png" href="../../../assets/icons/kjos-icon.png"/>
+    <link rel="stylesheet" href="../../../assets/css/index.css">
+    <link rel="stylesheet" href="../../../assets/css/learn-more.css">
+    <link rel="stylesheet" href="../../../assets/css/documentation.css">
+	<meta name="description" content="Your Light-Weight Debloated Windows ISO">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+	<meta property="og:title" content="KJOS" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kevinjmt.github.io/KJOS" />
+	<meta property="og:description" content="A ultra debloated Windows ISO" />
+	<meta property="og:image" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />	
+	<meta property="og:image:secure_url" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="../../../">
+                    <img class="imgtitle" src="../../../assets/icons/kjos-icon.png" >
+                </a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
+
+        <div class="text-container" style="background-color: whitesmoke; border-radius: 25px; padding: 50px; margin-top: 50px;">
+            <li><a href="./introduction/">Introduction</a></li>
+            <li style="color: steelblue;">1) KJOS download</li>
+            <li><a href="./2-local-account-creation">2) Local account creation</a></li>
+            <li><a href="./3-web-browser">3) Web browser</a></li>
+            <li><a href="./4-activation">4) Activation</a></li>
+            <li><a href="./5-softwares">5) Softwares</a></li>
+            <li><a href="./6-themes">6) Themes</a></li>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Une fois KJOS téléchargé, installer <a target="_blank" href="https://www.virtualbox.org">Virtual Box</a> ou tout autre logiciel d'émulation de machines virtuelles.</p>
+            <p>Créer une nouvelle machine virtuelle.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm.png" alt="new vm">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Configurer la machine virtuelle comme ci-dessous.</p>
+            <div class="note">
+                <p>⚠️ Mettre la version de Windows en fonction de l'OS choisit:</p>
+                <p>KJOS      ▶️ Windows 11</p>
+                <p>KJOS-Lite ▶️ Windows 10</p>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_2.png" alt="new vm 2">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <div class="note">
+                <p>⚠️ ATTENTION ⚠️</p>
+                <p>Pour la configuration, mettre au moins <a target="_blank" href="../../../en-savoir-plus#configuration-minimale">la configuration minimale</a> de la version de KJOS choisie.</p>
+                <p>Le mode EFI doit être désactivé pour KJOS-Lite !</p>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_3.png" alt="new vm 3">
+            <p>Pour la suite, laisser les paramètres par défaut et terminer.</p>
+        </div>
+
+        <div id="iso" class="text-container" style="padding: 100px 0;">
+            <p>Cliquer ensuite sur configuration.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_4.png" alt="new vm 4">
+            <p>Charger l'ISO dans les disques de la machine virtuelle dans:</p>
+            <div class="note">
+                <p>Stockage -> Vide -> Lecteur Optique -> Choose a disk file -> OK</p>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_5.png" alt="new vm 5">
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Démarrer la VM et cliquer sur la fenêtre qui vient de s'ouvrir.</p>
+            <div class="note">
+                <p>⚠️ Au moment où la machine démarre, il faudra cliquer de nombreuses fois sur la touche 'Entrée' pour démarrer l'installation, l'icône de windows (ou virtual box) s'affichera.</p>
+                <p>L'assistant d'installation démarrera et affichera le menu ci-dessous.</p>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_6.png" alt="new vm 6">
+            <p>Cliquer sur suivant et laisser tous les paramètres par défaut. Windows commencera à s'installer, celà peut prendre quelques minutes.</p>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/new_vm_7.png" alt="new vm 7">
+            <p>La VM va redémarrer de nombreuses fois et peu rester figée pendant quelques secondes, pas d'inquiétude, tout est normal.</p>
+            <p>Une fois l'installation finie, une page de création de compte local s'affichera.</p>
+        </div>
+
+        <div style="margin-top: 100px;" class="div-download">
+            <div class="download-columns">
+                <a class="download-kjos" href="../introduction">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Retour</p> <p>◀️ Introduction</p></h2>
+                    </div>
+                </a>
+                <a class="download-kjos" href="../2-creation-du-compte-local">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Suivant</p> <p>Création du compte local ▶️</p></h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <footer>
+        <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>
+    </footer>
+</body>
+</html>

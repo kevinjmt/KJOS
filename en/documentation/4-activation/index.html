@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJOS - Documentation</title>	
+    <link rel="shortcut icon" type="image/png" href="../../../assets/icons/kjos-icon.png"/>
+    <link rel="stylesheet" href="../../../assets/css/index.css">
+    <link rel="stylesheet" href="../../../assets/css/learn-more.css">
+    <link rel="stylesheet" href="../../../assets/css/documentation.css">
+	<meta name="description" content="Your Light-Weight Debloated Windows ISO">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+	<meta property="og:title" content="KJOS" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kevinjmt.github.io/KJOS" />
+	<meta property="og:description" content="A ultra debloated Windows ISO" />
+	<meta property="og:image" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />	
+	<meta property="og:image:secure_url" content="https://kevinjmt.github.io/KJOS/assets/icons/kjos-icon.png" />
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <div></div>
+            <div class="kjbrand">
+                <a href="../../../">
+                    <img class="imgtitle" src="../../../assets/icons/kjos-icon.png" >
+                </a>
+            </div>
+            <div class="iloveburgers" onclick="eatoneburger()">
+                <div class="ham">
+                    <div class="bur">
+                        <span class="ger q"></span>
+                        <span class="ger w"></span>
+                        <span class="ger e"></span>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".ham").addEventListener("click", function(){
+                        document.querySelector(".q").classList.toggle("a")
+                        document.querySelector(".w").classList.toggle("b")
+                        document.querySelector(".e").classList.toggle("c")
+                    })
+                    function eatoneburger(){
+                        document.querySelector(".menutitles").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
+
+        <div class="text-container" style="background-color: whitesmoke; border-radius: 25px; padding: 50px; margin-top: 50px;">
+            <li><a href="../introduction">Introduction</a></li>
+            <li><a href="../1-telechargement-de-kjos">1) Téléchargement de KJOS</a></li>
+            <li><a href="../2-creation-du-compte-local">2) Création du compte local</a></li>
+            <li><a href="../3-navigateur">3) Navigateur</a></li>
+            <li style="color: steelblue;">4) Activation</li>
+            <li><a href="../5-logiciels">5) Logiciels</a></li>
+            <li><a href="../6-themes">6) Thèmes</a></li>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <p>Pour l'activation de KJOS, vous n'avez rien à faire si vous possédez déjà une clé Windows 11 Pro, il suffit de regarder dans:</p>
+            <div class="note">
+                <p>Paramètres -> Système -> Activation</p>
+            </div>
+            <img style="border-radius: 10px;" src="../../../assets/imgs/activation1.png" alt="activation1">
+            <p>Ici, on peut voir que notre système n'est pas activé.</p>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <div class="note">
+                <p>📌 Si vous avez installé KJOS (pas la version KJOS-Lite) et que vous possédez déjà une clé Windows 11 Pro, il suffit de vous connecter à votre compte Microsoft sur lequel vous avez acheté votre license.</p>
+                <p>📌 Si vous n'avez pas de clé ou si vous avez installé KJOS-Lite, vous devez vous procurer une clé sur des magasins en ligne par exemple.</p>
+                <p>📌 À noter que KJOS-Lite est basé sur <a target="_blank" href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-iot-enterprise-ltsc">Windows 11 IoT LTSC</a>, pour l'activer, il vous faut donc une clé Windows 11 IoT LTSC, et non pas une clé Windows 11 Pro, cela ne fonctionnera pas.</p>
+            </div>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <div class="note" style="background-color: khaki;">
+                <p>📌 Il existe d'autres méthodes pour activer Windows, comme en utilisant <a target="_blank" href="https://massgrave.dev">Microsoft Activation Scripts</a>, mais ces méthodes peuvent être plus ou moins légales, donc à vos risques et périles ! Je ne serai pas responsable de vos actes, ce ne sont que vos actes et non les miens.</p>
+            </div>
+        </div>
+
+        <div class="text-container" style="padding: 100px 0;">
+            <img style="border-radius: 10px;" src="../../../assets/imgs/activation2.png" alt="activation2">
+            <p>Une fois Windows activé, on peut passer à la suite et terminer.</p>
+        </div>
+
+        <div style="margin-top: 100px;" class="div-download">
+            <div class="download-columns">
+                <a class="download-kjos" href="../3-navigateur">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Retour</p> <p>◀️ Navigateur</p></h2>
+                    </div>
+                </a>
+                <a class="download-kjos" href="../5-logiciels">
+                    <div class="download-kjos-div">
+                        <h2 class="text-download unselectable"><p>Suivant</p> <p>Logiciels ▶️</p></h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <footer>
+        <h3 style="margin-top: 150px; padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/">KJ</a></h3>
+    </footer>
+</body>
+</html>
